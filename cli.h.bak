@@ -1039,32 +1039,6 @@
 
 /** @} */ // end group window-covering
 
-/** @addtogroup plugin-secure-ezsp Plugin Commands:  Secure Ezsp
- * @ingroup cli
- * This plugin provides a set of CLI commands for sending secure EZSP commands
- * 
- * @{
- */
-
-/** @brief <b>plugin secure-ezsp reset_to_factory_defaults </b>
- *   - <i>Reset the NCP to factory default.</i>
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SECURE_EZSP_PLUGIN_SECURE_EZSP_RESET_TO_FACTORY_DEFAULTS
-
-/** @brief <b>plugin secure-ezsp set_security_key [securityType:4] </b>
- *   - <i>Set the Security Key of the Secure EZSP Protocol.</i>
- *     - securityType - INT32U - The security type to be used for the Secure EZSP Protocol.
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SECURE_EZSP_PLUGIN_SECURE_EZSP_SET_SECURITY_KEY
-
-/** @brief <b>plugin secure-ezsp set_security_parameters [securityLevel:4] </b>
- *   - <i>Set the Host-side Security Parameters of the Secure EZSP Protocol.</i>
- *     - securityLevel - INT32U - The security level to be used for the Secure EZSP communication.
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SECURE_EZSP_PLUGIN_SECURE_EZSP_SET_SECURITY_PARAMETERS
-
-/** @} */ // end group plugin-secure-ezsp
-
 /** @addtogroup plugin-address-table Plugin Commands: Address Table
  * @ingroup cli
  * This plugin provides a set of APIs and CLI commands for managing the address
@@ -3396,15 +3370,6 @@
 #define EMBER_AF_DOXYGEN_CLI_COMMAND_WINDOW_COVERING_GO_TO_TILT_PERCENTAGE
 
 /** @} */ // end group window-covering
-
-/** @addtogroup plugin-secure-ezsp Plugin Commands:  Secure Ezsp
- * @ingroup cli
- * This plugin provides a set of CLI commands for sending secure EZSP commands
- * 
- * @{
- */
-
-/** @} */ // end group plugin-secure-ezsp
 
 /** @addtogroup plugin-address-table Plugin Commands: Address Table
  * @ingroup cli

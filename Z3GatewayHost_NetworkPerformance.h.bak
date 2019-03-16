@@ -382,7 +382,6 @@
 // Use this macro to check if EZSP Secure Protocol plugin is included
 #define EMBER_AF_PLUGIN_SECURE_EZSP
 // User options for plugin EZSP Secure Protocol
-#define EMBER_AF_PLUGIN_SECURE_EZSP_SETUP_SECURITY_ON_INIT
 
 // Use this macro to check if Security Support plugin is included
 #define EMBER_AF_PLUGIN_SECURITY_SUPPORT
@@ -468,9 +467,6 @@
 
 // API system-timer from Unix Library plugin
 #define EMBER_AF_API_SYSTEM_TIMER "platform/base/hal/micro/system-timer.h"
-
-// API token from Unix Library plugin
-#define EMBER_AF_API_TOKEN "platform/base/hal/micro/token.h"
 
 
 // Custom macros

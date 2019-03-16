@@ -26405,23 +26405,6 @@ bool emberAfPluginNetworkFindGetEnableScanningAllChannelsCallback(void);
 /** @} END Network Find Plugin Callbacks */
 
 
-/** @name EZSP Secure Protocol Plugin Callbacks */
-// @{
-
-/** @brief Secure Ezsp Init
- *
- * This function is called when the Secure EZSP initializes.
- *
- * @param ncpSecurityKeyStatus Status of the NCP key: SET or UNSET Ver.: always
- * @param hostSecurityKeyStatus Status of the Host key: SET or UNSET Ver.: always
- * @param ncpSecurityType Type of NCP key: Temporary or Permanent Ver.: always
- */
-void emberSecureEzspInitCallback(EzspStatus ncpSecurityKeyStatus,
-                                 EzspStatus hostSecurityKeyStatus,
-                                 SecureEzspSecurityType ncpSecurityType);
-/** @} END EZSP Secure Protocol Plugin Callbacks */
-
-
 /** @name File Descriptor Dispatch Plugin Callbacks */
 // @{
 
@@ -26748,6 +26731,23 @@ void emberAfPluginBasicResetToFactoryDefaultsCallback(uint8_t endpoint);
  */
 void emberAfPluginConcentratorBroadcastSentCallback(void);
 /** @} END Concentrator Support Plugin Callbacks */
+
+
+/** @name EZSP Secure Protocol Plugin Callbacks */
+// @{
+
+/** @brief Secure Ezsp Init
+ *
+ * This function is called when the Secure EZSP initializes.
+ *
+ * @param ncpSecurityKeyStatus Status of the NCP key: SET or UNSET Ver.: always
+ * @param hostSecurityKeyStatus Status of the Host key: SET or UNSET Ver.: always
+ * @param ncpSecurityType Type of NCP key: Temporary or Permanent Ver.: always
+ */
+void emberSecureEzspInitCallback(EzspStatus ncpSecurityKeyStatus,
+                                 EzspStatus hostSecurityKeyStatus,
+                                 SecureEzspSecurityType ncpSecurityType);
+/** @} END EZSP Secure Protocol Plugin Callbacks */
 
 
 /** @} END addtogroup */

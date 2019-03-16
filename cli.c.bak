@@ -86,9 +86,6 @@ void emberAfPluginNetworkCreatorFormCommand(void);
 void emberAfPluginNetworkCreatorStartCommand(void);
 void emberAfPluginNetworkCreatorStatusCommand(void);
 void emberAfPluginNetworkCreatorStop(void);
-void emberAfPluginSecureEzspResetToFactoryDefaultsCommand(void);
-void emberAfPluginSecureEzspSetSecurityKeyCommand(void);
-void emberAfPluginSecureEzspSetSecurityParametersCommand(void);
 void emberAfPluginTestHarnessAddChildCommand(void);
 void emberAfPluginTestHarnessCertMangleCommand(void);
 #if defined(EMBER_AF_PLUGIN_NETWORK_FIND)
@@ -2741,27 +2738,6 @@ static EmberCommandEntry emberCommandTablePluginSimpleMeteringClientCommands[] =
 };
 
 #if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
-static const char * const emberCommandTablePluginSecureEzspSetSecurityKeyCommandArguments[] = {
-  "The security type to be used for the Secure EZSP Protocol.",
-  NULL
-};
-#endif
-
-#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
-static const char * const emberCommandTablePluginSecureEzspSetSecurityParametersCommandArguments[] = {
-  "The security level to be used for the Secure EZSP communication.",
-  NULL
-};
-#endif
-
-static EmberCommandEntry emberCommandTablePluginSecureEzspCommands[] = {
-  emberCommandEntryActionWithDetails("reset_to_factory_defaults", emberAfPluginSecureEzspResetToFactoryDefaultsCommand, "", "Reset the NCP to factory default.", NULL),
-  emberCommandEntryActionWithDetails("set_security_key", emberAfPluginSecureEzspSetSecurityKeyCommand, "w", "Set the Security Key of the Secure EZSP Protocol.", emberCommandTablePluginSecureEzspSetSecurityKeyCommandArguments),
-  emberCommandEntryActionWithDetails("set_security_parameters", emberAfPluginSecureEzspSetSecurityParametersCommand, "w", "Set the Host-side Security Parameters of the Secure EZSP Protocol.", emberCommandTablePluginSecureEzspSetSecurityParametersCommandArguments),
-  emberCommandEntryTerminator()
-};
-
-#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
 static const char * const emberCommandTablePluginReportingAddCommandArguments[] = {
   "The local endpoint from which the attribute is reported.",
   "The cluster where the attribute is located.",
@@ -3238,7 +3214,6 @@ static EmberCommandEntry emberCommandTablePluginCommands[] = {
   emberCommandEntrySubMenu("ota-storage-common", emberCommandTablePluginOtaStorageCommonCommands, ""),
   emberCommandEntrySubMenu("poll-control-client", emberCommandTablePluginPollControlClientCommands, ""),
   emberCommandEntrySubMenu("reporting", emberCommandTablePluginReportingCommands, ""),
-  emberCommandEntrySubMenu("secure-ezsp", emberCommandTablePluginSecureEzspCommands, ""),
   emberCommandEntrySubMenu("simple-metering-client", emberCommandTablePluginSimpleMeteringClientCommands, ""),
   emberCommandEntrySubMenu("stack-diagnostics", emberCommandTablePluginStackDiagnosticsCommands, ""),
   emberCommandEntrySubMenu("test-harness", emberCommandTablePluginTestHarnessCommands, ""),
