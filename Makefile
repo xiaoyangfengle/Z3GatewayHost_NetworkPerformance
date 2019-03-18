@@ -102,13 +102,13 @@ DEFINES = \
   -DEM_AF_TEST_HARNESS_CODE \
   -DEM_AF_LINK_M \
   -DEM_AF_LINK_PTHREAD \
+  -DEZSP_ASH=1 \
+  -DEZSP_HOST=1 \
   -DEMBER_AF_API_EMBER_TYPES=\"stack/include/ember-types.h\" \
   -DEMBER_AF_API_DEBUG_PRINT=\"app/framework/util/print.h\" \
   -DEMBER_AF_API_AF_HEADER=\"app/framework/include/af.h\" \
   -DEMBER_AF_API_AF_SECURITY_HEADER=\"app/framework/security/af-security.h\" \
   -DEMBER_STACK_ZIGBEE \
-  -DEZSP_ASH=1 \
-  -DEZSP_HOST=1 \
   -DAPPLICATION_TOKEN_HEADER=\"app/builder/Z3GatewayHost_NetworkPerformance/afv2-token.h\" \
   -DAPPLICATION_MFG_TOKEN_HEADER=\"app/builder/Z3GatewayHost_NetworkPerformance/afv2-mfg-token.h\" \
 

@@ -102,7 +102,7 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
-	<storageModule generalProj.esf.protocolIds="com.silabs.sdk.stack.super:2.5.2._310455071.com.silabs.sdk.stack.znet:6.5.2.0_756301428" generalProj.esf.protocolNames="znet" moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="76" projectCommon.boardIds="com.silabs.board.none:0.0.0" projectCommon.importModeId="LINK_LIBRARIES" projectCommon.partId="com.silabs.part.none" projectCommon.sdkId="com.silabs.sdk.stack.super:2.5.2._310455071"/>
+	<storageModule generalProj.esf.protocolIds="com.silabs.sdk.stack.super:2.5.2._310455071.com.silabs.sdk.stack.znet:6.5.2.0_756301428" generalProj.esf.protocolNames="znet" moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="80" projectCommon.boardIds="com.silabs.board.none:0.0.0" projectCommon.importModeId="LINK_LIBRARIES" projectCommon.partId="com.silabs.part.none" projectCommon.sdkId="com.silabs.sdk.stack.super:2.5.2._310455071"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="Z3GatewayHost_NetworkPerformance.com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType.1135067834" name="SLS CDT Project" projectType="com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType"/>
 	</storageModule>
